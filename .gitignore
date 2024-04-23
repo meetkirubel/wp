@@ -1,0 +1,37 @@
+# WordPress core (don't commit core files)
+/wp-admin/
+/wp-includes/
+/wp-content/index.php  # Unnecessary for version control
+
+# Configuration (sensitive information)
+/wp-config.php
+/wp-secrets.php  # If you're using this
+
+# Examples (not needed in production)
+/wp-content/themes/twentytwentythree/  # Replace with your theme directory name(s) if using bundled themes
+
+# Uploads (large, dynamic content)
+/wp-content/uploads/
+
+# Logs (generated files)
+/wp-content/debug.log
+/wp-content/cache/
+/wp-content/plugins/akismet/akismet.log  # Example plugin log
+
+# Temporary and auto-generated files
+/.idea/
+/composer.lock  # If using Composer
+
+# Ignore OS/editor-specific files
+*~
+*.psd
+*.log
+*.bak
+
+# Ignore common version control files
+.DS_Store
+Thumbs.db
+
+# Add any custom plugins or themes you want to version control here
+!/wp-content/plugins/my-custom-plugin/  # Replace with your plugin directory name(s)
+!/wp-content/themes/my-theme/  # Replace with your theme directory name(s)
